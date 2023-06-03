@@ -1,0 +1,118 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+ 
+h4,
+p {
+    font-family: $font-Satisfy;
+    
+}
+
+p{
+    color: $lightgrey;
+    font-size: 0.9rem;
+}
+
+h4{
+    color: $pink;
+    font-size: 0.88rem;
+}
+
+body,
+html {
+    width: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    //background-color: $pink;
+    overflow-x: hidden;
+    background-image: linear-gradient(to right, $lightgrey 0%, $lightgrey 20%, $pink 20%, $pink 100%,);
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+/*
+.button {
+    position: relative;
+    display: inline-block;
+    color: $white;
+    font-family: 'Avenir Next';
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 2.1875rem;
+    background-color: $brightpink;
+    padding: 0.1rem 3.375rem;
+    cursor: pointer;
+    @include breakpoint-up(medium) {
+        font-size: 1.6rem;
+        line-height: 4rem;
+        width: 15rem;
+        //padding:1.8125rem 4.25rem; 
+        //border-radius: 2.8125rem;
+    }
+    transition: box-shadow 300ms ease-in-out;
+    &:hover {
+        box-shadow: inset -0.4rem -0.4rem 0.4rem rgba(43, 43, 43, 0.25), inset 0.4rem 0.4rem 0.4rem rgba(43, 43, 43, 0.25);
+    }
+    &__inactive {
+        background-color: $darkgrey;
+    }
+    &-white {
+        background-color: $white;
+        color: $brightpink;
+    }
+    &-pink-outline {
+        border-style: solid;
+        border-width: 2px;
+        border-color: $brightpink;
+    }
+}
+*/
+//flexbox
+.flex {
+    display: flex;
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-jc-sa {
+        justify-content: space-around;
+    }
+    &-jc-se {
+        justify-content: space-evenly;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+    &-ai-sb {
+        align-items: space-between;
+    }
+    &-ai-sa {
+        align-items: space-around;
+    }
+    &-ai-b {
+        align-items: baseline;
+    }
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,36 @@
+.cake{
+
+    &__gradient{
+        position: fixed;
+        left: 48%;
+        top: 23.6%;
+        transform: translate(-50%, -50%);
+        background-image: linear-gradient(to bottom, $pink, $darkpurple);
+        
+        width: 17rem;
+        height: 21rem;
+    }
+
+    &__outline{
+        position: fixed;
+        left: 43%;
+        top: 23%;
+        transform: translate(-50%, -50%);
+        width: 10rem;
+        height: 12rem;
+        outline: 0.8rem solid $lightgrey;
+    }
+
+    &__display{
+        position: fixed;
+        left: 58%;
+        top: 23%;
+        transform: translate(-50%, -50%);
+        background-image: url(../../images/cupcakes.jpg);
+        width: 15rem;
+        height: 16rem;
+        background-position: -5% 0%;
+        background-size: cover;
+        box-shadow: 0.4rem 0.4rem 1.1rem #0000004e;
+    }
+}
