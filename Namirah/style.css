@@ -188,7 +188,7 @@ a:hover {
 
 .cake {
   width: 100%;
-  height: 45vh;
+  height: 48vh;
 }
 .cake__gradient {
   position: fixed;
@@ -227,13 +227,15 @@ a:hover {
 .poem {
   padding-left: 8vw;
 }
+.poem p, .poem h4 {
+  margin: 0;
+}
 .poem__section {
-  margin-top: 0.1rem;
+  margin-top: 0.5rem;
   height: 6.5rem;
 }
 .poem__wish {
   width: 1.2rem;
-  margin-top: -0.2rem;
   height: 1.2rem;
 }
 .poem__content {
