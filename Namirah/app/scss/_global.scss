@@ -45,45 +45,25 @@ a:visited,
 a:hover {
     text-decoration: none;
 }
-/*
+
 .button {
     position: relative;
     display: inline-block;
-    color: $white;
-    font-family: 'Avenir Next';
+    color: $lightgrey;
     font-weight: 700;
-    font-size: 1.2rem;
+    //font-size: 1.2rem;
     text-align: center;
-    line-height: 3rem;
+    line-height: 2rem;
     border-radius: 2.1875rem;
-    background-color: $brightpink;
-    padding: 0.1rem 3.375rem;
-    cursor: pointer;
-    @include breakpoint-up(medium) {
-        font-size: 1.6rem;
-        line-height: 4rem;
-        width: 15rem;
-        //padding:1.8125rem 4.25rem; 
-        //border-radius: 2.8125rem;
-    }
-    transition: box-shadow 300ms ease-in-out;
-    &:hover {
-        box-shadow: inset -0.4rem -0.4rem 0.4rem rgba(43, 43, 43, 0.25), inset 0.4rem 0.4rem 0.4rem rgba(43, 43, 43, 0.25);
-    }
-    &__inactive {
-        background-color: $darkgrey;
-    }
-    &-white {
-        background-color: $white;
-        color: $brightpink;
-    }
-    &-pink-outline {
-        border-style: solid;
-        border-width: 2px;
-        border-color: $brightpink;
-    }
+    background-color: $pink;
+    padding: 0.1rem 1.5rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: $pink;
+
+    //transition: box-shadow 300ms ease-in-out;
 }
-*/
+
 //flexbox
 .flex {
     display: flex;

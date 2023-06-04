@@ -11,14 +11,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 </head>
 <body>
-    .
+    <section clas="overlay" id="overlay">
+        <div class="overlay__bg"></div>
+        <div class="overlay__container" id="popup">
+            <div class="overlay__textbox"><p id="text">Insert name</p></div>
+            <div class="overlay__buttons flex flex-jc-se">
+                <a onclick="B1()" class="button" id="b1">Yes</a>
+                <a onclick="B2()" class="button" id="b2">No</a>
+            </div>
+            
+
+        </div>
+    </section>
+
     <section class="cake">
         <div class="cake__gradient"></div>
         <div class="cake__outline"></div>
         <div class="cake__display"></div>
     </section>
 
-    <section class="poem flex flex-jc-se">
+    <section class="poem flex flex-jc-c">
         <div class="poem__wish">
             <h4>H<br>
                 A<br>
@@ -49,7 +61,7 @@
                 ounger than me, but more mature<br>
                 less her soul, her smile is a cure<br>
                 angerous she can be, most men fear<br>
-                 bliss it is when she calls you dear<br>
+                &nbspbliss it is when she calls you dear<br>
                 <br>
                 es, it was neither the right place<br>
                 or the right time to be her ace<br>
@@ -64,7 +76,7 @@
             
         
     </section>
-
+    <script src="./app/js/confetti.js"></script>
     <script src="./app/js/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,66 @@
+@keyframes shaking {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.shake {
+  animation: shaking 0.5s infinite;
+}
+
+@keyframes scalingUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: rotate(1);
+  }
+}
+.scaleUp {
+  animation: scalingUp 0.5s;
+}
+
+@keyframes scalingDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+.scaleDown {
+  animation: scalingDown 0.5s;
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -44,45 +107,21 @@ a:hover {
   text-decoration: none;
 }
 
-/*
 .button {
-    position: relative;
-    display: inline-block;
-    color: $white;
-    font-family: 'Avenir Next';
-    font-weight: 700;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 3rem;
-    border-radius: 2.1875rem;
-    background-color: $brightpink;
-    padding: 0.1rem 3.375rem;
-    cursor: pointer;
-    @include breakpoint-up(medium) {
-        font-size: 1.6rem;
-        line-height: 4rem;
-        width: 15rem;
-        //padding:1.8125rem 4.25rem; 
-        //border-radius: 2.8125rem;
-    }
-    transition: box-shadow 300ms ease-in-out;
-    &:hover {
-        box-shadow: inset -0.4rem -0.4rem 0.4rem rgba(43, 43, 43, 0.25), inset 0.4rem 0.4rem 0.4rem rgba(43, 43, 43, 0.25);
-    }
-    &__inactive {
-        background-color: $darkgrey;
-    }
-    &-white {
-        background-color: $white;
-        color: $brightpink;
-    }
-    &-pink-outline {
-        border-style: solid;
-        border-width: 2px;
-        border-color: $brightpink;
-    }
+  position: relative;
+  display: inline-block;
+  color: hsl(0, 0%, 91%);
+  font-weight: 700;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 2.1875rem;
+  background-color: #D3859C;
+  padding: 0.1rem 1.5rem;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #D3859C;
 }
-*/
+
 .flex {
   display: flex;
 }
@@ -115,6 +154,42 @@ a:hover {
   display: none;
 }
 
+.overlay__bg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.overlay__container {
+  position: fixed;
+  left: 2rem;
+  right: 2rem;
+  top: 50%;
+  height: 10.5rem;
+  background-color: hsl(0, 0%, 91%);
+  border-radius: 1rem;
+  z-index: 2;
+  box-shadow: 0.4rem 0.4rem 1.1rem rgba(0, 0, 0, 0.3058823529);
+}
+.overlay__container p {
+  color: #D3859C;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.overlay__textbox {
+  padding: 1rem;
+  height: 7rem;
+}
+
+.cake {
+  width: 100%;
+  height: 22rem;
+}
 .cake__gradient {
   position: fixed;
   left: 48%;
@@ -147,13 +222,10 @@ a:hover {
 }
 
 .poem {
-  position: fixed;
-  left: 51.5%;
-  top: 70%;
-  transform: translate(-50%, -50%);
+  padding-left: 1.9rem;
 }
 .poem__wish {
-  width: 1.4rem;
+  width: 1.2rem;
   margin-top: -0.2rem;
   height: 1.2rem;
 }
