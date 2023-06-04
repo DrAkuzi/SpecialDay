@@ -98,7 +98,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-image: linear-gradient(to right, hsl(0, 0%, 91%) 0%, hsl(0, 0%, 91%) 20%, #D3859C 20%, #D3859C 100%);
+  background-image: linear-gradient(to right, hsl(0, 0%, 91%) 0%, hsl(0, 0%, 91%) calc(50vw - 108px), #D3859C calc(50vw - 108px), #D3859C 100%);
 }
 
 a,
@@ -188,7 +188,7 @@ a:hover {
 
 .cake {
   width: 100%;
-  height: 22rem;
+  height: 45vh;
 }
 .cake__gradient {
   position: fixed;

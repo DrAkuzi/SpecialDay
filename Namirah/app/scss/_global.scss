@@ -37,7 +37,7 @@ body {
     padding: 0;
     //background-color: $pink;
     overflow-x: hidden;
-    background-image: linear-gradient(to right, $lightgrey 0%, $lightgrey 20%, $pink 20%, $pink 100%,);
+    background-image: linear-gradient(to right, $lightgrey 0%, $lightgrey calc((100vw / 2) - 108px), $pink calc((100vw / 2) - 108px), $pink 100%,);
 }
 
 a,
